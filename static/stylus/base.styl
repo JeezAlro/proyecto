@@ -1,0 +1,305 @@
+@import "nib"
+@import "normalize.styl"
+@import "style.styl"
+
+body
+	background white
+	font-size 16px
+	font-family 'Open Sans', sans-serif
+	color #434343
+
+figure 
+	margin 0
+img
+	vertical-align top
+
+ul
+	margin 0
+	padding 0
+li
+	list-style none
+a
+	text-decoration none
+	display block
+
+//modos
+
+.radius	
+	border-radius 60%
+	overflow hidden
+.center
+	margin 0 auto
+.relative
+	position relative
+.absolute
+	position absolute
+.none
+	display none
+.borders
+	border 5px solid #bec3c7
+.bordern
+	border 2px solid #bec3c7
+.bazulclaro
+	border-color #3598dc
+.bloque
+	overflow hidden
+	margin 0 auto
+	margin-top .4em
+	padding .5em
+	display block
+//Header
+.header
+	background #bec3c7
+	.small
+		height 9.5em
+
+//logo
+.logo
+	background #ecf0f1
+	float left
+	height 3.1em
+	position relative
+	width 40%
+	&:before
+		border-right 50px solid transparent
+		border-top 51px solid #ecf0f1
+		content ""
+		display inline-block
+		left 100%
+		position absolute
+		top 0
+		z-index 4
+.logof
+	margin 0 0 0 .4em 
+	padding-top .5em
+	width 6em
+
+//menu de notificaciones	
+.userMenu
+	background #34495e
+	float right
+	height 3.1em
+	text-align right
+	width 60%
+.menu	
+	float right
+	overflow hidden
+	padding 0 .3em
+	
+.notificaciones
+	float left
+	vertical-align middle	
+.notificacion
+	color white
+	float left
+	font-size 1.5em
+	margin 0
+	padding .55em .2em
+	position relative
+	&:hover
+		background rgba(0,0,0,.5)
+	.noti
+		background #e23130
+		border-radius 3px
+		font-size .6em
+		padding .1em
+		position absolute
+		right 2px
+		top 2px
+
+//menu de usurio
+.miavatar
+	border 2px solid white
+	border-radius 50%;
+	float left
+	height 36px;
+	margin-top .3em
+	overflow hidden
+	padding 0
+	width 36px;
+	.submenu
+		display none
+.movilusuario
+	background #434343
+	clear  both
+	.opciones
+		color white
+		display block
+		padding .6em
+		text-align center
+		transition background .3s
+		&:hover
+			background rgba(0, 0, 0, .1)
+//bucar
+.busqueda
+	overflow hidden
+	padding .4em
+	clear both
+.buscar
+	display inline-block
+	width 85%
+	.text 
+		border none
+		border-radius 5px
+		box-sizing border-box
+		color #434343
+		padding .3em 1.5em .3em 1.5em
+		width 100%;
+		&:focus
+			outline none
+.iconobuscar
+	color #434343
+	font-size 1.25em
+	margin .3em .1em
+	right 0
+	top 0
+.iconodelete
+	color #434343
+	font-size 1.25em
+	left 0
+	margin .3em .1em
+	top 0
+		
+.menuMobil
+	background #434343
+	color white
+	float right
+	font-size 1.25em
+	padding .4em
+	vertical-align top
+.mejoresVendedores
+	margin-top .4em
+.avatarvendedores	
+	margin-top .4em
+	text-align center
+
+.title
+	width 80%
+	height 2.18em
+	background #434343
+	margin 0
+	padding 0 .4em
+	font-weight normal
+	color white
+	line-height 2.18em
+	&:before
+		content ""
+		position absolute
+		left 100%
+		border-bottom 41px solid #434343
+		border-right  2.18em solid transparent
+.mejores
+	width 80px
+	height 80px
+	display inline-block
+	.vendedorn
+		background rgba(190, 195, 199, .75)
+		top 80px
+		left 0
+		right 0
+		text-align center
+		line-height 80px
+		transition top .3s
+		color #434343
+	&:hover 
+		.vendedorn 
+			top 0px
+.producto
+	background #ecf0f1
+.grid
+	display inline-block
+	&.small
+		width 45%
+		margin-right 1%
+		margin-bottom 1em
+		&:nth-child(even)
+			margin-right 0
+	.nombre
+		color #3598dc
+		margin 0 
+		padding 0
+		font-weight normal
+		font-size 1.25em
+	.estado
+	.envio
+	.vendedor
+	.ubicacion	
+		font-size .8em
+		margin 0
+		padding 0
+	.medalla
+		width 30px
+	.precio
+		font-weight bold
+		margin 0
+.agregar
+	right 1em
+	top 0
+	color #e64b3a
+
+.infop
+	padding .1em
+.atributo
+	color #3598dc
+	font-style italic
+	display inline-block
+.imagenp
+	width 100%
+
+.bronce
+.plata
+.oro
+	background url('../img/medallap.png')
+	width 27px
+	height 26px
+	position absolute
+	top 0
+	right .4em 
+.bronce
+	background-position 0 0
+.plata
+	background-position -27px 0
+.oro
+	background-position -54px 0
+
+@media screen and (min-width:480px)
+	.bronce
+	.plata
+	.oro
+		background url('../img/medallam.png')
+		width 40px
+		height 38px
+		position absolute
+		top 0
+		right .4em 
+	.bronce
+		background-position 0 0
+	.plata
+		background-position -40px 0
+	.oro
+		background-position -80px 0
+@media screen and (min-width:1000px)
+	.bronce
+	.plata
+	.oro
+		background url('../img/medallal.png')
+		width 80px
+		height 76px
+		position absolute
+		top 0
+		right .4em 
+	.bronce
+		background-position 0 0
+	.plata
+		background-position -80px 0
+	.oro
+		background-position -160px 0
+
+	.grid
+		display inline-block
+		&.large
+			width 31%
+			margin-right 1.4%
+			margin-bottom 1em
+			&:nth-child(even)
+				margin-right 0
