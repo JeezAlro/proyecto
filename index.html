@@ -14,36 +14,123 @@
 	
 </head>
 <body>
-	<header class="header small">
+	<!--Cabecera-->
+	<header class="header">
+		<!--Loogo-->
 		<div class="logo">
 			<figure id="logo" class="logof" >
-				<img class="logof"  src="static/img/logo.png" alt="Truekes El Salvador">
+				<img src="static/img/logo.png" alt="Truekes El Salvador">
 			</figure>
 		</div>
+		<!--Panel de notificacienes y menus-->
 		<div class="userMenu relative">
 			<ul class="menu">
 				
-				<li class="notificaciones"><a  class="notificacion icon-mail2" href="#"><span class="noti none"></span></a></li>
-				<li class="notificaciones"><a class="notificacion icon-bell" href="#"><span class="noti">2</span></a></li>
-				<li class="notificaciones"><a class="notificacion icon-orden" href="#"><span class="noti">2</span></a></li>
+				<li class="notificaciones relative">
+					<a  class="notificacion icon-mail2 " href="#"><span class="noti notimjs">20</span></a>
+				
+				</li>
+				<li class="notificaciones"><a class="notificacion icon-bell" href="#"><span class="noti notinot">2</span></a></li>
+				<li class="notificaciones"><a class="notificacion icon-orden" href="#"><span class="noti notiord">2</span></a></li>
 				<li class="miavatar"><figure><a href="#"><img src="static/img/user.jpeg" width="40" ></a></figure>
-					<ul class="submenu">
-						<li><a href="#">Perfil</a></li>
-						<li><a href="#">Deseos</a></li>
-						<li><a href="#">Configuracion</a></li>
-						<li><a href="#">Salir</a></li>
-					</ul>
 				</li>
 			</ul>
 		</div>
-		<div class="menumovil movilusuario none">
+		<!--pop de mesajes-->
+		<div class="pop mjs">
+			<a href="#">
+				<div class="mesaje">
+					<figure class="emisor">
+						<img src="static/img/user.jpeg" width="65">			
+					</figure>
+					<div class="mmisor">
+						<span><strong>Jesus Lopez</strong></span><br>
+						<span class="tmjs">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nam, necessitatibus odio dignissimos nostrum temporibus nisi? Voluptates explicabo ipsum unde iure veniam, cum mollitia placeat, delectus asperiores quis, ducimus reprehenderit.
+						</span>
+					</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="mesaje">
+					<figure class="emisor">
+						<img src="static/img/user.jpeg" width="65">			
+					</figure>
+					<div class="mmisor">
+						<span><strong>Jesus Lopez</strong></span><br>
+						<span class="tmjs">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nam, necessitatibus odio dignissimos nostrum temporibus nisi? Voluptates explicabo ipsum unde iure veniam, cum mollitia placeat, delectus asperiores quis, ducimus reprehenderit.
+						</span>
+					</div>
+				</div>
+			</a>				
+			<a href="#">
+				<div class="mesaje">
+					<figure class="emisor">
+						<img src="static/img/user.jpeg" width="65">			
+					</figure>
+					<div class="mmisor">
+						<span><strong>Jesus Lopez</strong></span><br>
+						<span class="tmjs">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nam, necessitatibus odio dignissimos nostrum temporibus nisi? Voluptates explicabo ipsum unde iure veniam, cum mollitia placeat, delectus asperiores quis, ducimus reprehenderit.
+						</span>
+					</div>
+				</div>
+			</a>				
+			<a href="#">
+				<div class="mesaje">
+					<figure class="emisor">
+						<img src="static/img/user.jpeg" width="65">			
+					</figure>
+					<div class="mmisor">
+						<span><strong>Jesus Lopez</strong></span><br>
+						<span class="tmjs">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nam, necessitatibus odio dignissimos nostrum temporibus nisi? Voluptates explicabo ipsum unde iure veniam, cum mollitia placeat, delectus asperiores quis, ducimus reprehenderit.
+						</span>
+					</div>
+				</div>
+			</a>					
+		</div>	
+		<!--pop de notificaciones-->
+		<div class="pop not">
+			<div class="mesaje">
+				<figure class="emisor">
+					<a href="#"><img src="static/img/user.jpeg" width="65"></a>				
+				</figure>
+				<div class="mmisor">
+					<span>Jesus Lopez</span><br>
+					<span class="tmjs">
+					Tea seguido
+					</span>
+				</div>
+			</div>
+			
+			</div>		
+		<!--pop de ordenes-->
+		<div class="pop ord">
+			<div class="mesaje">
+				<figure class="emisor">
+					<a href="#"><img src="static/img/prod.jpg" width="65px"></a>				
+				</figure>
+				<div class="mmisor">
+					<span>Wii sin cotrol</span><br>
+					<span class="tmjs">
+					Ya se ha enviado el pedido
+					</span>
+				</div>
+			</div>
+			
+			</div>						
+		<!--Menu de usuario-->
+		<div class="menuUser">
 			<ul>
-						<li><a class="opciones"href="#">Perfil</a></li>
+						<li><a class="opciones"href="http://google.com" target="blank">Perfil</a></li>
 						<li><a class="opciones"href="#">Deseos</a></li>
 						<li><a class="opciones"href="#">Configuracion</a></li>
 						<li><a class="opciones"href="#">Salir</a></li>
 					</ul>
 		</div>
+		<!--Panel de busquedas-->
 		<div class="busqueda">
 			<form action="" class="buscar relative">
 				<input class="text" type="text" placeholder="Burcar">
@@ -51,20 +138,31 @@
 				<span class="icon-delete absolute iconodelete"></span>
 			</form>
 			<a href="" class="menuMobil radius icon-menu">
-				</a>
-				
+				</a>		
 		</div>
-		<ul class="menumovil movilcategorias none">
+		<!--Menu de categorias Para Mobiles-->
+		<ul class="categoriasMobil">
+			<li><a class="opciones" href="#">Electronica</a></li>
+			<li><a class="opciones" href="#">Computadoras</a></li>
+			<li><a class="opciones" href="#">Ropa y complementos</a></li>
+			<li><a class="opciones" href="#">Celulares y accesorios</a></li>
+		</ul>
+		<!--Menu de categorias para Desktop-->
+		<ul class="categoriasDesktop">
 					<li><a class="opciones" href="#">Electronica</a></li>
 					<li><a class="opciones" href="#">Computadoras</a></li>
 					<li><a class="opciones" href="#">Ropa y complementos</a></li>
 					<li><a class="opciones" href="#">Celulares y accesorios</a></li>
-				</ul>
+					<li><a class="opciones" href="#">Electronica</a></li>
+		</ul>
 	</header>
+	<!--Top de vendedores-->
 	<section class="mejoresVendedores">
+		<!--Titulo-->
 		<h3 class="title relative">
 			Mejores Vendedores
 		</h3>
+		<!--Avatar de los mejores vendedores-->
 		<div class="avatarvendedores">
 			<figure class=" radius mejores borders bazulclaro relative">
 				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
@@ -76,67 +174,97 @@
 				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
 
 			</figure>
+			<figure class=" radius mejores borders bazulclaro relative">
+				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
+			</figure>
+			<figure class=" radius mejores borders bazulclaro relative">
+				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
+			</figure>
+			<figure class=" radius mejores borders bazulclaro relative">
+				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
+
+			</figure>
+			<figure class=" radius mejores borders bazulclaro relative">
+				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
+			</figure>
+			<figure class=" radius mejores borders bazulclaro relative">
+				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
+			</figure>
+			<figure class=" radius mejores borders bazulclaro relative">
+				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
+
+			</figure>
+			<figure class=" radius mejores borders bazulclaro relative">
+				<a href="#"><img class="mejores radius" src="static/img/user.jpeg"><span class="vendedorn absolute radius">Jesus</span></a>
+
+			</figure>
 		</div>
 	</section>
+	<!--Panel de Productos recien publicados-->
 	<section class="recientes">
 		<h3 class="title relative">
 			Publicaciones Recientes
 		</h3>
 		<div class="bloque container">
+			<!--Contenedor de la publicacion-->
 			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
 				<a href="#">
 					<img class="imagenp" src="static/img/prod.jpg">
 				</a>
+				<!--Iformacion-->
 				<div class="infop">
+					<!--Titulo de publicacion-->
 					<a href="#"><h2 class="nombre">Wii Sin control</h2></a>
+					<!--Condicion Usado Nuevo-->
 					<p class="estado">Estado <span class="atributo">Usado</span></p>
+					<!--Ubicacion departamental-->
 					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
+					<!--Costos y tipo de envio-->
 					<p class="envio">Envío <span class="atributo">Gratis</span></p>
+					<!--Vendedor-->
 					<p class="vendedor">Vendedor <a href="#" class="atributo">Davids</a>
+						<!--Medalla del vendedor-->
 						<a href="#" class="bronce"></a>
 					</p>
+					<!--Precio del producto-->
 					<p class="precio relative">$300.00
+						<!--Agregar a lista de deseos-->
 						<a href="#" class="agregar icon-corazon absolute"></a>
 					</p>
 				</div>
 			</article>
 
+			<!--Contenedor de la publicacion-->
 			<article class="producto bordern grid small medio large">
-				<a href="#">
-					<img class="imagenp" src="static/img/prod3.jpg">
-				</a>
-				<div class="infop">
-					<a href="#"><h2 class="nombre">iPhone 5s negro</h2></a>
-					<p class="estado">Estado <span class="atributo">Usado</span></p>
-					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
-					<p class="envio">Envío <span class="atributo">Gratis</span></p>
-					<p class="vendedor">Vendedor <span class="atributo">David</span>
-						<a href="#" class="oro"></a>
-					</p>
-					<p class="precio relative">$300.00
-						<a  href="#" class="agregar icon-corazon absolute"></a>
-					</p>
-				</div>
-			</article>
-			
-			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
 				<a href="#">
 					<img class="imagenp" src="static/img/prod2.jpg">
 				</a>
+				<!--Iformacion-->
 				<div class="infop">
-					<h2 class="nombre">Camisa de superman</h2>
-					<p class="estado">Estado <span class="atributo">Usado</span></p>
+					<!--Titulo de publicacion-->
+					<a href="#"><h2 class="nombre">Camisa de superman nueva color azul</h2></a>
+					<!--Condicion Usado Nuevo-->
+					<p class="estado">Estado <span class="atributo">Nuevo</span></p>
+					<!--Ubicacion departamental-->
 					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
-					<p class="envio">Envío <span class="atributo">Gratis</span></p>
-					<p class="vendedor">Vendedor <span class="atributo">David</span> 
-						<a class="plata "></a>
+					<!--Costos y tipo de envio-->
+					<p class="envio">Envío <span class="atributo">$2.00</span></p>
+					<!--Vendedor-->
+					<p class="vendedor">Vendedor <a href="#" class="atributo">David</a>
+						<!--Medalla del vendedor-->
+						<a href="#" class="plata"></a>
 					</p>
+					<!--Precio del producto-->
 					<p class="precio relative">$300.00
-						<a href="#"class="agregar icon-corazon absolute"></a>
+						<!--Agregar a lista de deseos-->
+						<a href="#" class="agregar icon-corazon absolute"></a>
 					</p>
 				</div>
 			</article>
 
+			<!--Enlase patrocinados-->
 			<aside class="producto bordern grid small medio large">
 					<!-- lateral -->
 					<ins class="adsbygoogle" style="display:inline-block;" data-ad-client="ca-pub-5945619966947206" data-ad-slot="3601622304"></ins>
@@ -145,27 +273,269 @@
 					</script>
 			</aside>
 
+			<!--Contenedor de la publicacion-->
 			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
 				<a href="#">
-					<img class="imagenp" src="static/img/prod.jpg">
+					<img class="imagenp" src="static/img/prod3.jpg">
 				</a>
+				<!--Iformacion-->
 				<div class="infop">
-					<a href="#">
-					<h2 class="nombre">Wii Sin control</h2>
-					</a>
+					<!--Titulo de publicacion-->
+					<a href="#"><h2 class="nombre">iPhone 5s Negro Liberado Nitido</h2></a>
+					<!--Condicion Usado Nuevo-->
 					<p class="estado">Estado <span class="atributo">Usado</span></p>
+					<!--Ubicacion departamental-->
 					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
+					<!--Costos y tipo de envio-->
 					<p class="envio">Envío <span class="atributo">Gratis</span></p>
-					<p class="vendedor">Vendedor <span class="atributo ">David</span> 
-						<a href="#" class="bronce"></a>
+					<!--Vendedor-->
+					<p class="vendedor">Vendedor <a href="#" class="atributo">Davids</a>
+						<!--Medalla del vendedor-->
+						<a href="#" class="oro"></a>
 					</p>
-					<p class="precio relative">$300.00
-						<a href="#"class="agregar icon-corazon absolute"></a>
+					<!--Precio del producto-->
+					<p class="precio relative">$450.00
+						<!--Agregar a lista de deseos-->
+						<a href="#" class="agregar icon-corazon absolute"></a>
 					</p>
 				</div>
 			</article>
+
+			<!--Contenedor de la publicacion-->
+			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
+				<a href="#">
+					<img class="imagenp" src="static/img/prod.jpg">
+				</a>
+				<!--Iformacion-->
+				<div class="infop">
+					<!--Titulo de publicacion-->
+					<a href="#"><h2 class="nombre">Wii Sin control</h2></a>
+					<!--Condicion Usado Nuevo-->
+					<p class="estado">Estado <span class="atributo">Usado</span></p>
+					<!--Ubicacion departamental-->
+					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
+					<!--Costos y tipo de envio-->
+					<p class="envio">Envío <span class="atributo">Gratis</span></p>
+					<!--Vendedor-->
+					<p class="vendedor">Vendedor <a href="#" class="atributo">Davids</a>
+						<!--Medalla del vendedor-->
+						<a href="#" class="bronce"></a>
+					</p>
+					<!--Precio del producto-->
+					<p class="precio relative">$300.00
+						<!--Agregar a lista de deseos-->
+						<a href="#" class="agregar icon-corazon absolute"></a>
+					</p>
+				</div>
+			</article>
+
+			<!--Contenedor de la publicacion-->
+			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
+				<a href="#">
+					<img class="imagenp" src="static/img/prod2.jpg">
+				</a>
+				<!--Iformacion-->
+				<div class="infop">
+					<!--Titulo de publicacion-->
+					<a href="#"><h2 class="nombre">Camisa de superman nueva color azul</h2></a>
+					<!--Condicion Usado Nuevo-->
+					<p class="estado">Estado <span class="atributo">Nuevo</span></p>
+					<!--Ubicacion departamental-->
+					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
+					<!--Costos y tipo de envio-->
+					<p class="envio">Envío <span class="atributo">$2.00</span></p>
+					<!--Vendedor-->
+					<p class="vendedor">Vendedor <a href="#" class="atributo">David</a>
+						<!--Medalla del vendedor-->
+						<a href="#" class="plata"></a>
+					</p>
+					<!--Precio del producto-->
+					<p class="precio relative">$300.00
+						<!--Agregar a lista de deseos-->
+						<a href="#" class="agregar icon-corazon absolute"></a>
+					</p>
+				</div>
+			</article>
+
+			<!--Enlase patrocinados-->
+			<aside class="producto bordern grid small medio large">
+					<!-- lateral -->
+					<ins class="adsbygoogle" style="display:inline-block;" data-ad-client="ca-pub-5945619966947206" data-ad-slot="3601622304"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+			</aside>
+
+			<!--Contenedor de la publicacion-->
+			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
+				<a href="#">
+					<img class="imagenp" src="static/img/prod3.jpg">
+				</a>
+				<!--Iformacion-->
+				<div class="infop">
+					<!--Titulo de publicacion-->
+					<a href="#"><h2 class="nombre">iPhone 5s Negro Liberado Nitido</h2></a>
+					<!--Condicion Usado Nuevo-->
+					<p class="estado">Estado <span class="atributo">Usado</span></p>
+					<!--Ubicacion departamental-->
+					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
+					<!--Costos y tipo de envio-->
+					<p class="envio">Envío <span class="atributo">Gratis</span></p>
+					<!--Vendedor-->
+					<p class="vendedor">Vendedor <a href="#" class="atributo">Davids</a>
+						<!--Medalla del vendedor-->
+						<a href="#" class="oro"></a>
+					</p>
+					<!--Precio del producto-->
+					<p class="precio relative">$450.00
+						<!--Agregar a lista de deseos-->
+						<a href="#" class="agregar icon-corazon absolute"></a>
+					</p>
+				</div>
+			</article>
+
+			<!--Contenedor de la publicacion-->
+			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
+				<a href="#">
+					<img class="imagenp" src="static/img/prod.jpg">
+				</a>
+				<!--Iformacion-->
+				<div class="infop">
+					<!--Titulo de publicacion-->
+					<a href="#"><h2 class="nombre">Wii Sin control</h2></a>
+					<!--Condicion Usado Nuevo-->
+					<p class="estado">Estado <span class="atributo">Usado</span></p>
+					<!--Ubicacion departamental-->
+					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
+					<!--Costos y tipo de envio-->
+					<p class="envio">Envío <span class="atributo">Gratis</span></p>
+					<!--Vendedor-->
+					<p class="vendedor">Vendedor <a href="#" class="atributo">Davids</a>
+						<!--Medalla del vendedor-->
+						<a href="#" class="bronce"></a>
+					</p>
+					<!--Precio del producto-->
+					<p class="precio relative">$300.00
+						<!--Agregar a lista de deseos-->
+						<a href="#" class="agregar icon-corazon absolute"></a>
+					</p>
+				</div>
+			</article>
+
+			<!--Contenedor de la publicacion-->
+			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
+				<a href="#">
+					<img class="imagenp" src="static/img/prod2.jpg">
+				</a>
+				<!--Iformacion-->
+				<div class="infop">
+					<!--Titulo de publicacion-->
+					<a href="#"><h2 class="nombre">Camisa de superman nueva color azul</h2></a>
+					<!--Condicion Usado Nuevo-->
+					<p class="estado">Estado <span class="atributo">Nuevo</span></p>
+					<!--Ubicacion departamental-->
+					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
+					<!--Costos y tipo de envio-->
+					<p class="envio">Envío <span class="atributo">$2.00</span></p>
+					<!--Vendedor-->
+					<p class="vendedor">Vendedor <a href="#" class="atributo">David</a>
+						<!--Medalla del vendedor-->
+						<a href="#" class="plata"></a>
+					</p>
+					<!--Precio del producto-->
+					<p class="precio relative">$300.00
+						<!--Agregar a lista de deseos-->
+						<a href="#" class="agregar icon-corazon absolute"></a>
+					</p>
+				</div>
+			</article>
+
+			<!--Enlase patrocinados-->
+			<aside class="producto bordern grid small medio large">
+					<!-- lateral -->
+					<ins class="adsbygoogle" style="display:inline-block;" data-ad-client="ca-pub-5945619966947206" data-ad-slot="3601622304"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+			</aside>
+
+			<!--Contenedor de la publicacion-->
+			<article class="producto bordern grid small medio large">
+				<!--Imagen del publicacion-->
+				<a href="#">
+					<img class="imagenp" src="static/img/prod4.jpg">
+				</a>
+				<!--Iformacion-->
+				<div class="infop">
+					<!--Titulo de publicacion-->
+					<a href="#"><h2 class="nombre">AlienWare 18 Nueva color gris</h2></a>
+					<!--Condicion Usado Nuevo-->
+					<p class="estado">Estado <span class="atributo">Usado</span></p>
+					<!--Ubicacion departamental-->
+					<p class="ubicacion">Ubicacion <span class="atributo">San Salvador</span></p>
+					<!--Costos y tipo de envio-->
+					<p class="envio">Envío <span class="atributo">Gratis</span></p>
+					<!--Vendedor-->
+					<p class="vendedor">Vendedor <a href="#" class="atributo">Davids</a>
+						<!--Medalla del vendedor-->
+						<a href="#" class="oro"></a>
+					</p>
+					<!--Precio del producto-->
+					<p class="precio relative">$2450.00
+						<!--Agregar a lista de deseos-->
+						<a href="#" class="agregar icon-corazon absolute"></a>
+					</p>
+				</div>
+			</article>
+
+			
 		</div>
 	</section>
+	<footer class="footer">
+
+		<figure id="logo" class="logof" >
+			<img src="static/img/logofo.png" alt="Truekes El Salvador">
+			
+		</figure>
+		
+		<div class="contacto">
+			<a class="icon-f center"href="#"> /truekeselsalvador</a>
+			<a class="icon-twitter13" href="#">     @trukeselsalavador</a>
+			<a class="icon-mail"href="mailto:hola@truekes.com">   hola@tuekes.com</a>
+		</div>
+
+		
+			<div class="footerCategorias">
+			<h3>Categorias</h3>
+		<ul class="categoriasFooter">
+			<li><a class="opciones" href="#">Electronica</a></li>
+			<li><a class="opciones" href="#">Computadoras</a></li>
+			<li><a class="opciones" href="#">Ropa y complementos</a></li>
+			<li><a class="opciones" href="#">Celulares y accesorios</a></li>
+			<li><a class="opciones" href="#">Electronica</a></li>
+			<li><a class="opciones" href="#">Computadoras</a></li>
+			<li><a class="opciones" href="#">Ropa y complementos</a></li>
+			<li><a class="opciones" href="#">Celulares y accesorios</a></li>
+			<li><a class="opciones" href="#">Electronica</a></li>
+			<li><a class="opciones" href="#">Computadoras</a></li>
+			<li><a class="opciones" href="#">Ropa y complementos</a></li>
+			<li><a class="opciones" href="#">Celulares y accesorios</a></li>
+		</ul>
+		</div>
+		<div class="pie">
+			<div class="iformacion">
+				<a class="opciones" href="#">Terminos</a>
+				<a class="opciones" href="#">¿Que es Truekes?</a>
+				<a class="opciones" href="#">FAQ</a>
+			</div>
+		</div>
+	</footer>
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
