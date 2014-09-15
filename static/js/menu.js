@@ -10,7 +10,10 @@
 		$notiord = $('.notiord'),
 		$popmsm = $('.mjs'),
 		$popnot = $('.not'),
-		$popord = $('.ord')
+		$popord = $('.ord'),
+		//Prueba de incio
+		$iniciar = $('.iniciar'),
+		$menu = $('.menu')
 function mostrarMenuUser(e){
 	$popmsm.slideUp();
 	$popnot.slideUp();
@@ -91,3 +94,11 @@ $mostrarMenu.click(mostrarMenuUser)
 $mostrarNotificaciones.click(mostrarNot)
 $mostrarOrdenes.click(mostrarOrd)
 $mostrarCateg.click(mostrarCategorias)
+
+function sesion(e){
+	$menu.removeClass('none')
+	$iniciar.css('display','none')
+	
+}
+//Prueba
+$iniciar.click(sesion)
