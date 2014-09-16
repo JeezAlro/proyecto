@@ -544,11 +544,12 @@
 	<script src="static/js/menu.js"></script>
 	<script type="text/javascript" src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
 	<script type="text/javascript">
-		var container = document.querySelector('.container');
-		var msnry = new Masonry( container, {
- 		// options
-  		itemSelector: '.grid'
-		});
+		 $(document).ready(function(){
+        $('img').load(function(){
+            $(".bloque").masonry();
+        });
+        $(".bloque").masonry();
+    });
 	</script>
 </body>
 </html>
