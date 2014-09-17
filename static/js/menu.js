@@ -11,6 +11,7 @@
 		$popmsm = $('.mjs'),
 		$popnot = $('.not'),
 		$popord = $('.ord'),
+		$omobil = $('.omobil'),
 		//Prueba de incio
 		$iniciar = $('.iniciar'),
 		$menu = $('.menu')
@@ -18,6 +19,7 @@ function mostrarMenuUser(e){
 	$popmsm.slideUp();
 	$popnot.slideUp();
 	$popord.slideUp();
+	$mostrarCateg.toggleClass('active');
 	$mostrarMensajes.css('background', 'transparent')
 	$mostrarOrdenes.css('background', 'transparent')
 	$mostrarNotificaciones.css('background', 'transparent')
@@ -29,11 +31,14 @@ function mostrarCategorias(e){
 	$popmsm.slideUp();
 	$popnot.slideUp();
 	$popord.slideUp();
+	$mostrarCateg.toggleClass('active');
 	$mostrarMensajes.css('background', 'transparent')
 	$mostrarOrdenes.css('background', 'transparent')
 	$mostrarNotificaciones.css('background', 'transparent')
 	$categorias.slideToggle();
 	$menuUser.slideUp();
+	$('.omobil').children("ul").slideUp();
+	$('.omobil').children('a').removeClass('icono-menos active').addClass('icono-mas');
 	return false
 }
 
@@ -44,6 +49,7 @@ function mostrarMjs(e){
 	$popnot.slideUp();
 	$popord.slideUp();
 	$popmsm.slideToggle();
+	$mostrarCateg.toggleClass('active');
 	$mostrarNotificaciones.css('background', 'transparent')
 	$mostrarOrdenes.css('background', 'transparent')
 	$mostrarMensajes.css('background', 'rgba(0,0,0,0.5)')
@@ -57,6 +63,7 @@ function mostrarNot(e){
 	$popmsm.slideUp();
 	$popord.slideUp();
 	$popnot.slideToggle();
+	$mostrarCateg.toggleClass('active');
 	$mostrarMensajes.css('background', 'transparent')
 	$mostrarOrdenes.css('background', 'transparent')
 	$mostrarNotificaciones.css('background', 'rgba(0,0,0,0.5)')
@@ -71,6 +78,7 @@ function mostrarOrd(e){
 	$popmsm.slideUp();
 	$popnot.slideUp();
 	$popord.slideToggle();
+	$mostrarCateg.toggleClass('active');
 	$mostrarMensajes.css('background', 'transparent')
 	$mostrarNotificaciones.css('background', 'transparent')
 	$mostrarOrdenes.css('background', 'rgba(0,0,0,0.5)')
@@ -80,7 +88,6 @@ function mostrarOrd(e){
 }
 function ocultarMenus(e){
 	$menuUser.slideUp();
-	$categorias.slideUp();
 	$popmsm.slideUp();
 	$popnot.slideUp();
 	$popord.slideUp();
@@ -88,13 +95,22 @@ function ocultarMenus(e){
 	$mostrarOrdenes.css('background', 'transparent')
 	$mostrarNotificaciones.css('background', 'transparent')
 }
-$(window).click(ocultarMenus)
+function mostraSubCategorias(e){
+	 $(this).children('a').toggleClass('icono-mas icono-menos active');
+	 $(this).siblings('.omobil').children('a').removeClass('icono-menos active').addClass('icono-mas');
+	 $(this).siblings(".omobil").children("ul").slideUp();
+	 $(this).children("ul").slideToggle();
+
+	 
+
+}
+$(document).click(ocultarMenus)
 $mostrarMensajes.click(mostrarMjs)
 $mostrarMenu.click(mostrarMenuUser)
 $mostrarNotificaciones.click(mostrarNot)
 $mostrarOrdenes.click(mostrarOrd)
 $mostrarCateg.click(mostrarCategorias)
-
+$omobil.click(mostraSubCategorias)
 function sesion(e){
 	$menu.removeClass('none')
 	$iniciar.css('display','none')
